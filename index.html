@@ -1,0 +1,190 @@
+?<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhashini R - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e3f2fd;
+            color: #0d47a1;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e88e5, #42a5f5);
+            padding: 50px 20px;
+            border-bottom: 5px solid #90caf9;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #90caf9;
+            box-shadow: 0 0 15px #90caf9;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-picture:hover {
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        nav {
+            background: #1565c0;
+            padding: 10px 0;
+            box-shadow: 0 4px 10px rgba(25, 118, 210, 0.5);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #90caf9;
+            text-shadow: 0 0 10px white;
+        }
+
+        .section-content {
+            background: rgba(25, 118, 210, 0.2);
+            margin: 40px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(25, 118, 210, 0.5);
+            transition: transform 0.3s ease-in-out;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 1s ease-in-out forwards;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .download-button {
+            background: #1e88e5;
+            color: white;
+            padding: 12px 25px;
+            font-weight: bold;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+        }
+
+        .download-button:hover {
+            background: white;
+            color: #1e88e5;
+            box-shadow: 0 0 15px #90caf9;
+        }
+
+        footer {
+            background: #1565c0;
+            padding: 15px;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="Subha_img.jpeg" alt="Profile Picture" class="profile-picture">
+            <h1>Subhashini R</h1>
+            <p>Student | AI Enthusiast | Hackathon Finalist</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">Objective</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+    
+    <section id="objective" class="section-content">
+        <h2>Objective</h2>
+        <p>I am a goal-oriented computer science with AI- Majored, focused on AI , problem-solving and made significant improvements by participating in ICT hackathons and conducting a Cyber Detox course. I also have experience in team activities with 2 years as a board member of the Mathelets Club, associated with the Department of Mathematics.</p>
+    </section>
+    
+    <section id="education" class="section-content">
+        <h2>Education</h2>
+        <p>B.Sc. Computer Science with AI, University of Madras </p>
+        <p>CGPA - 81.1667 </p>
+    </section>
+    
+    <section id="skills" class="section-content">
+        <h2>Skills</h2>
+        <ul>
+   <li>Python</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Leadership</li>
+            <li>Communication</li>
+        </ul>
+    </section>
+    
+    <section id="projects" class="section-content">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="#">AI Driven Career Counselor</a> - Built a career counselor software , which helps an individual to learn about themselves on the career path ...</li>
+            <li><a href="#">Cyber Detox</a> - A web application designed to help users take a break...</li>
+            <li><a href="#">AI Chatbot (IBM)</a> - Developed a chatbot using AI and NLP...</li>
+            <li><a href="#">Trackflow</a> - A dashboard project used for service-based companies, helping to manage individual work, revenue earned, and company profit.</li>
+        </ul>
+    </section>
+    
+    <section id="resume" class="section-content">
+        <h2>Resume</h2>
+        <a href="Subha_resume.pdf" target="_blank" class="download-button">Download CV</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Subhashini R</p>
+    </footer>
+</body>
+</html>
